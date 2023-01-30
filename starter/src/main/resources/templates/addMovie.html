@@ -1,0 +1,22 @@
+<!------PP3-Step5-Create an add movie page------>
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Movie</title>
+</head>
+<body>
+
+<!--create a method addMovieForm with the request mapping '/addMovieForm'-->
+<form action="addMovie" method="POST">
+  <p>Movie Title: <input type="text" name="movieTitle" /></p>
+  <p>Maturity Rating: <input type="text" name="maturityRating" /></p>
+  <p>Genre: <input type="text" name="genre" /></p>
+  <p><input type="submit" value="Submit" /></p>
+</form>
+<a href="/">Home</a>
+
+</body>
+</html>

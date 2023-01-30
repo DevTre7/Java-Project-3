@@ -1,5 +1,6 @@
 package com.javaunit3.springmvc;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,9 @@ public class MovieController {
     //Create a 'getBestMoviePage()' method w/ a 'Spring Model' parameter, then set the request mapping to '/bestMovie'.
     @RequestMapping("/bestMovie")
     public String getBestMoviePage(Model model){
-        BestMovieService bestMovieService = null;
+
+        TitanicMovie titanicMovie = new TitanicMovie();
+        BestMovieService bestMovieService =  new BestMovieService(titanicMovie);
         model.addAttribute("BestMovie", bestMovieService.getBestMovie().getTitle());
         return "bestMovie";
 

@@ -1,0 +1,24 @@
+<!--PP2 -Step5-Vote for the best movie using forms------------------------------>
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote For The Best Movie</title>
+</head>
+<body>
+<!--Create a form with a 'GET' request on the path 'voteForBestMovie'-->
+<form action="voteForBestMovie" method="GET">
+    <p>Movie Title:<input type="text" name="movieTitle" /></p>
+    <p><input type="submit" value="Submit" /></p>
+
+    <!--Add a link to the voting page for users to get home to the index page-->
+    <a href="voteForBestMovieForm">Vote for your favorite movie!</a>
+
+    <!--Add a link within the bestMovie.html file to navigate to 'Home' page-->
+    <a href="/">Home</a>
+
+</form>
+
+</body>
+</html>

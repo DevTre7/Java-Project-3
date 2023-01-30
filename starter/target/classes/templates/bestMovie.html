@@ -1,0 +1,20 @@
+<!--Continued from PP2-Step3-------------------------------------------------->
+<!--Create a 'bestMovie' html file in the  template folder-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>The Best Movie</title>
+</head>
+<body>
+
+<!--Use Thymeleaf syntax to output the phrase: The best movie is', while the best movie is retrieved from 'BestMovieService'-->
+<p th:text=" 'The best movie is: ' + ${BestMovie}" />
+
+<!--PP3- Steps4-Linking between pAGES-->
+<!--Add a link within the bestMovie.html file to navigate to 'Home' page-->
+<a href="/">Home</a>
+
+</body>
+</html>
