@@ -1,6 +1,7 @@
-package com.javaunit3.springmvc;
+package com.javaunit3.springmvc.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 //PP3-Step4-Creating a Movie Entity
 @Entity
@@ -19,6 +20,9 @@ public class MovieEntity {
 
     @Column(name="genre")
     private String genre;
+
+    private List<VoteEntity> votes;
+
 
     //Getter and setters for all the above private properties/ fields:
 
@@ -54,4 +58,9 @@ public class MovieEntity {
         this.title = title;
     }
 
+    public void addVote(VoteEntity newVote) {
+    }
+
+    public List<VoteEntity> getVotes() { return votes;
+    }
 }

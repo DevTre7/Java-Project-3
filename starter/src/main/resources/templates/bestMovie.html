@@ -12,6 +12,9 @@
 <!--Use Thymeleaf syntax to output the phrase: The best movie is', while the best movie is retrieved from 'BestMovieService'-->
 <p th:text=" 'The best movie is: ' + ${BestMovie}" />
 
+<!--Use Thymeleaf syntax to display the best movie title and the names of who voted for it.-->
+<p th:text="'Voters: ' + ${bestMovieVoters}" />
+
 <!--PP3- Steps4-Linking between pAGES-->
 <!--Add a link within the bestMovie.html file to navigate to 'Home' page-->
 <a href="/">Home</a>
