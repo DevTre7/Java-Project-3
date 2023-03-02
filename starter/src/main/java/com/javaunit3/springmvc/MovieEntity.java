@@ -20,6 +20,8 @@ public class MovieEntity {
     @Column(name="genre")
     private String genre;
 
+    //Getter and setters for all the above private properties/ fields:
+
     public String getMaturityRating() {
         return maturityRating;
     }
